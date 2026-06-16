@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // ←←← 添加这一行
-      base: '/FALLEN/',   // 注意仓库名必须完全匹配，且以 / 结尾
+      // ←←← 必须添加这一行
+      base: '/FALLEN/',
 
       server: {
         port: 3000,
